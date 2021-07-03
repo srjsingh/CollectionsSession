@@ -2,7 +2,7 @@ package finalVSfinallyVSfinalize;
 
 public class FinallyConcept {
 	// finally is a block
-	// finally is always with try and catch
+	// finally is always written with try and catch
 	// finally will get executed every time even without catch block
 	
 	public static void main(String[] args) {
