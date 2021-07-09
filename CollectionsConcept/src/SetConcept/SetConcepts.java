@@ -45,17 +45,27 @@ public class SetConcepts {
 
 		hs.remove("Beta");
 		System.out.println(hs);
-		
+
 		Set<Integer> first = new HashSet<Integer>();
-		first.addAll(Arrays.asList(new Integer[] {1,2,3,4,5,6,7}));
-		
+		first.addAll(Arrays.asList(new Integer[] { 1, 2, 3, 4, 5, 6, 7 }));
+
 		Set<Integer> second = new HashSet<Integer>();
-		second.addAll(Arrays.asList(new Integer[] {1,2,3,4,5,6,7,8,9,10}));
-		
-		//get union
+		second.addAll(Arrays.asList(new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }));
+
+		// get union
 		Set<Integer> union = new HashSet<Integer>(first);
 		union.addAll(second);
 		System.out.println(union);
+
+		// get intersection
+		Set<Integer> intersection = new HashSet<Integer>(first);
+		intersection.retainAll(second);
+		System.out.println(intersection);
+		
+		//get difference
+		Set<Integer> difference = new HashSet<Integer>(second);
+		difference.removeAll(first);
+		System.out.println(difference);
 	}
 
 }
