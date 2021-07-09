@@ -16,7 +16,7 @@ public class HashTableConcept {
 		h1.put(1, "Tom");
 		h1.put(2, "Test");
 		h1.put(3, "Java");
-
+		
 		// create a clone copy/shallow copy:
 		Hashtable h2 = new Hashtable();
 		
