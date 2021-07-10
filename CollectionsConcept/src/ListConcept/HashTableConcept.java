@@ -11,6 +11,7 @@ public class HashTableConcept {
 		// it is similar to hashmap, but it is synchronised
 		// stores the value on the basis of key-val
 		// key--> Object--HashCode --> value
+		//no null key and null values
 
 		Hashtable h1 = new Hashtable();
 		h1.put(1, "Tom");
@@ -35,7 +36,6 @@ public class HashTableConcept {
 		st.put("A", "Naveen");
 		st.put("B", "Manager");
 		st.put("C", "Selenium");
-		
 		if(st.containsValue("Naveen"))
 			System.out.println("Value is found");
 		
