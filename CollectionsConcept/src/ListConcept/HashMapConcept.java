@@ -1,7 +1,6 @@
 package ListConcept;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Map.Entry;
 
 public class HashMapConcept {
@@ -27,7 +26,7 @@ public class HashMapConcept {
 		System.out.println(hm.get(1));
 		System.out.println(hm.get(4));
 		
-		for(Entry m : hm.entrySet()) {
+		for(Entry<Integer, String> m : hm.entrySet()) {
 			System.out.println(m.getKey()+" "+m.getValue());
 		}
 		
